@@ -30,21 +30,17 @@
   "dependencies": {
     "firebase-admin": "^9.6.0",
     "https-proxy-agent": "^5.0.0",
-    "retry": "^0.12.0",
-    "snyk": "^1.518.0"
+    "retry": "^0.12.0"
   },
   "devDependencies": {
     "mocha": "^8.3.2"
   },
   "scripts": {
     "test": "mocha --exit",
-    "debugtest": "mocha --debug-brk $npm_package_options_mocha --exit",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "debugtest": "mocha --debug-brk $npm_package_options_mocha --exit"
   },
   "directories": {
     "test": "test"
   },
-  "tonicExampleFilename": "example.js",
-  "snyk": true
+  "tonicExampleFilename": "example.js"
 }
